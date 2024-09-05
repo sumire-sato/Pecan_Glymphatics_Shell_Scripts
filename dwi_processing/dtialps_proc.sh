@@ -243,7 +243,7 @@ for this_preprocessing_step in ${preprocessing_steps[@]}; do
         cd ${Subject_dir}/${dwi_folder_name}
    
         tensorfitL1=tensorfit_warpedToMNI_eddycorrected_denoised_unringed_dwi_L1.nii.gz
-        tensorfitL2=tensorfit_warpedToMNI_eeddycorrected_denoised_unringed_dwi_L2.nii.gz
+        tensorfitL2=tensorfit_warpedToMNI_eddycorrected_denoised_unringed_dwi_L2.nii.gz
         tensorfitL3=tensorfit_warpedToMNI_eddycorrected_denoised_unringed_dwi_L3.nii.gz
 
         fslmeants -i ${tensorfitL1} -o L1_LAssociation_mean.txt -m ${ROIloc_LAssociation}
